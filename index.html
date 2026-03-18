@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Educação</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+        </svg>
+        <span class="logo-text">Nexus Educação</span>
+      </div>
+
+      
+      <nav class="nav-desktop">
+        <button onclick="scrollToSection('inicio')">Início</button>
+        <button onclick="scrollToSection('sobre')">Sobre</button> 
+        <button onclick="scrollToSection('cursos')">Cursos</button>
+        <button onclick="scrollToSection('modalidades')">Modalidades</button>
+        <button onclick="scrollToSection('diferenciais')">Diferenciais</button>
+        <button onclick="scrollToSection('depoimentos')">Depoimentos</button>
+        <button onclick="scrollToSection('contato')">Contato</button>
+      </nav>
+
+      
+      <button class="btn-cta" onclick="scrollToSection('contato')">Inscreva-se</button>
+    </div>
+  </header>
+
+  
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <div>
+          <h1 class="hero-title">
+            Transforme seu futuro com a <span>Nexus Educação</span>
+          </h1>
+          <p class="hero-description">
+            Oferecemos cursos técnicos e profissionalizantes de alta qualidade nas modalidades presencial e EAD. 
+            Prepare-se para o mercado de trabalho com quem entende de educação.
+          </p>
+          <button class="hero-btn" onclick="scrollToSection('contato')">
+            Quero me inscrever
+          </button>
+        </div>
+
+        
+        <div>
+          <img 
+            src="https://images.unsplash.com/photo-1759922378123-a1f4f1e39bae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc3MjQwNTI1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Estudantes em sala de aula"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="about-title">Sobre a Nexus Educação</h2>
+        <p class="about-text">
+          A <strong>Nexus Educação</strong> é uma instituição comprometida com a qualificação profissional 
+          e o desenvolvimento de competências essenciais para o mercado de trabalho. Nossa missão é 
+          transformar vidas através da educação de qualidade, oferecendo cursos técnicos e profissionalizantes 
+          que preparam nossos alunos para os desafios da carreira profissional.
+        </p>
+        <p class="about-text">
+          Com uma equipe de professores qualificados e infraestrutura moderna, proporcionamos uma experiência 
+          de aprendizado completa e eficaz. Acreditamos que a formação técnica é fundamental para o 
+          crescimento profissional e nos dedicamos a oferecer o melhor ensino para nossos alunos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="cursos">
+    <h2>Cursos</h2>
+    <p>Conheça nossos cursos de alta qualidade.</p>
+  </section>
+
+  <section id="modalidades">
+    <h2>Modalidades</h2>
+    <p>Oferecemos diversas modalidades de ensino.</p>
+  </section>
+
+  <section id="diferenciais">
+    <h2>Diferenciais</h2>
+    <p>Nossos diferenciais competitivos.</p>
+  </section>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <p>O que nossos alunos dizem sobre nós.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco.</p>
+  </section>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
