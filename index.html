@@ -153,9 +153,76 @@
     <p>O que nossos alunos dizem sobre nós.</p>
   </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco.</p>
+  <section id="contato-tecnico" class="contact-section-tecnico">
+    <div class="container-tecnico">
+      <div class="section-header-tecnico">
+        <h2 class="white">Entre em Contato</h2>
+        <p>Preencha o formulário e receba mais informações sobre nossos cursos</p>
+      </div>
+
+      <div class="form-wrapper-tecnico">
+        <!-- Formulário -->
+        <form id="contactFormTecnico" class="contact-form-tecnico">
+          <div class="form-group-tecnico">
+            <label for="nameTecnico">Nome Completo *</label>
+            <input type="text" id="nameTecnico" name="nameTecnico" placeholder="Digite seu nome completo" required>
+          </div>
+
+          <div class="form-group-tecnico">
+            <label for="emailTecnico">E-mail *</label>
+            <input type="email" id="emailTecnico" name="emailTecnico" placeholder="seu@email.com" required>
+          </div>
+
+          <div class="form-group-tecnico">
+            <label for="phoneTecnico">Telefone *</label>
+            <input type="tel" id="phoneTecnico" name="phoneTecnico" placeholder="(00) 00000-0000" required>
+          </div>
+
+          <div class="form-group-tecnico">
+            <label for="courseTecnico">Curso de Interesse *</label>
+            <select id="courseTecnico" name="courseTecnico" required>
+              <option value="" disabled selected>Selecione um curso</option>
+              <option value="informatica">Técnico em Informática</option>
+              <option value="administracao">Técnico em Administração</option>
+              <option value="enfermagem">Técnico em Enfermagem</option>
+              <option value="contabilidade">Técnico em Contabilidade</option>
+              <option value="seguranca">Técnico em Segurança do Trabalho</option>
+              <option value="logistica">Técnico em Logística</option>
+            </select>
+          </div>
+
+          <div class="form-group-tecnico">
+            <label for="modalityTecnico">Modalidade Desejada *</label>
+            <select id="modalityTecnico" name="modalityTecnico" required>
+              <option value="" disabled selected>Selecione uma modalidade</option>
+              <option value="presencial">Presencial</option>
+              <option value="ead">EAD (Ensino a Distância)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn-tecnico">
+            <!-- Ícone Send -->
+            <svg class="icon-tecnico" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Quero receber informações
+          </button>
+        </form>
+
+        <!-- Mensagem de sucesso (inicialmente oculta) -->
+        <div id="successMessageTecnico" class="success-message-tecnico hidden-tecnico">
+          <div class="success-icon-tecnico">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </div>
+          <h3>Formulário Enviado!</h3>
+          <p>Entraremos em contato em breve. Obrigado pelo interesse!</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="/scripts/script.js"></script>
