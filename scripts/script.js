@@ -47,3 +47,10 @@ if (contactForm && successMsg) {
     }, 3000);
   });
 }
+
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
