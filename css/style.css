@@ -607,3 +607,106 @@ p {
   height: 1rem;
   stroke: currentColor;
 }
+
+
+
+
+/* Seção de depoimentos */
+.testimonials-section {
+  padding: 4rem 0;
+  background-color: #f9fafb; /* gray-50 */
+}
+
+.container-depoimentos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.depoimentos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.depoimentos-header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+@media (min-width: 768px) {
+  .depoimentos-header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.depoimentos-header p {
+  font-size: 1.125rem;
+  color: #4b5563; /* gray-600 */
+}
+
+/* Grid de depoimentos */
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card de depoimento */
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Ícone de aspas */
+.quote-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #a5f3fc; /* cyan-200 */
+}
+
+.quote-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Texto do depoimento */
+.testimonial-text {
+  color: #374151; /* gray-700 */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Autor */
+.testimonial-author {
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+  padding-top: 1rem;
+}
+
+.testimonial-author .name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.testimonial-author .course {
+  font-size: 0.875rem;
+  color: #4b5563; /* gray-600 */
+}
+
