@@ -36,6 +36,14 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06b6d4;
+}
 
 .logo-icon {
   width: 2rem;
